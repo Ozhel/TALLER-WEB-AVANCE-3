@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-image: url('https://www.horus-proyectos.com/wp-content/uploads/2021/05/Supermercado.jpg'); 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  background-size: cover; /* Ocupará todo el contenedor sin repetir */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat;   
+}
+
+
+.Contenedor-de-Objetos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 100vw; 
+}
+
+
+.Objetos {
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.Objetos:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+  transform: scale(1.05); 
+}
+
+
+
+.Infop1{
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Infop2{
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Infop3{
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Infop4{
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Infop1 button{
+  border: none;
+  background-color: #000;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.Infop2 button{
+  border: none;
+  background-color: #000;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  
+}
+
+.Infop3 button{
+  border: none;
+  background-color: #000;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.Infop4 button{
+  border: none;
+  background-color: #000;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.Precio{
+  font-size: 30px;
+  font-weight: 500;
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  flex-wrap: wrap; 
+  padding: 0.5rem; 
+  gap: 0.5rem; 
+  border-bottom: solid 0.5px #aaa; 
+  background-color: #eee;
+  position: sticky;
+  top: 0;
+}
+
+.up{
+  padding: -0rem; 
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem; 
+}
+
+.nav-links a {
+  text-decoration: none; 
+  color: black; 
+  transition: color 0.3s ease-in-out; 
+}
+
+
+nav a {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #555;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+footer {
+
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0; 
+}
+
+footer .Li {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  text-align: center;
+  justify-content: center; 
+}
+
+footer .Li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+footer .Li a:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+
+.form-register {
+  width: 500px;
+  background: rgb(105, 105, 105);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  text-align: center;
+  border: 1px solid #ffffff;
+
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  width: 100%;
+  background: #202020;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #ffffff;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+
+}
+
+
+.form-register .botons {
+  width: 100%;
+  background: #3d3e41;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  background-color: white;
+  margin:  0;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 500px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  justify-self: center;
+}
+
+.styled-table thead tr {
+
+   background-color: #000000;
+   color:rgb(240, 248, 255);
+
+}
+
+.styled-table th,
+.styled-table td 
+{
+   padding: 12px 15px;
+}
+
+.styled-table tbody tr{
+   border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even){
+   background-color: #f3f3f3;
+}
+
+h1.logo a {
+  display: flex;
+  align-items: center; /* Alinea verticalmente el logo con el texto */
+  gap: 0.5rem; /* Espacio entre el logo y el texto */
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+h1.logo svg {
+  display: block; /* Asegura que el logo SVG se comporte como un bloque y se alinee correctamente */
+  width: 28px; /* Ajusta el tamaño del logo */
+  height: 24px;
+}
